@@ -1,0 +1,111 @@
+/*表单*/
+.pt_form{
+    margin:5px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+form .form-row{
+    padding:5px;    
+}
+
+form textarea{    
+  resize:both;    
+}
+form input{
+    line-height:19px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+form input,form textarea,form select{
+    border: 1px solid #CCC;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #555;
+    padding-left:6px
+}
+
+form .form-row > label{
+    font-size:12px;
+}
+
+form .form-row > div,form .form-row > label{        
+    line-height:24px;
+    height:atuo;
+}
+
+
+form .form-row::before, form .form-row::after{
+    display:table;
+    line-height:0;
+    content:"";
+}
+form .form-row::before, form .form-row::after{
+    clear:both;
+}
+
+form .form-row .row-label,form .form-row .row-item,form .form-row .row-msg{
+    display:inline-block;
+    vertical-align:top;   
+       
+}
+form .form-row .row-label{
+    min-width:70px; 
+    margin-top:0;
+    padding-top:3px;
+}
+form .form-row .row-item{
+    padding-bottom:5px
+}
+form .form-row .row-msg{
+    padding-bottom:5px;
+    padding-left:5px
+}
+form .form-row  .row-desc{
+	color: #999;
+}
+
+form .success,form .error{
+    display: inline-block;
+    display: -moz-inline-stack;
+    zoom: 1;
+    vertical-align: middle;
+    background: url(img/msg_bg.png) no-repeat;
+    color: #444;
+    line-height: 18px;
+    padding: 2px 10px 2px 23px;
+    margin-left: 10px;
+    _margin-left: 5px;
+}
+
+form .form-row .row-msg span.error{ 
+    background-position: 3px -46px;
+    border-color: #40B3FF;
+    color: red;
+}
+form .form-row .row-msg span.success{   
+    background-position: 3px -247px;
+    border-color: #40B3FF;
+}
+form .form-row .row-msg span.yz_loading{   
+    background: url(img/yz_loading.gif) no-repeat;
+}
+
+
+form .form-row .row-item .img-btn{  
+    margin-left:10px
+}
+
+
+form .form-row .row-item .img-preview{  
+    margin:5px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    width:200px;
+    height: 150px;
+}

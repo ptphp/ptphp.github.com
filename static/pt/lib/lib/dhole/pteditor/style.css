@@ -1,0 +1,112 @@
+@import url(inspector/dialog.css);
+@import url(inspector/inspector.css);
+@import url(inspector/inspectorCommon.css);
+@import url(inspector/inspectorSyntaxHighlight.css);
+@import url(inspector/popover.css);
+@import url(inspector/auditsPanel.css);
+@import url(inspector/breadcrumbList.css);
+@import url(inspector/canvasProfiler.css);
+@import url(inspector/cmdevtools.css);
+@import url(inspector/cssNamedFlows.css);
+@import url(inspector/dataGrid.css);
+@import url(inspector/elementsPanel.css);
+@import url(inspector/filteredItemSelectionDialog.css);
+@import url(inspector/heapProfiler.css);
+@import url(inspector/helpScreen.css);
+@import url(inspector/indexedDBViews.css);
+@import url(inspector/nativeMemoryProfiler.css);
+@import url(inspector/navigatorView.css);
+@import url(inspector/networkLogView.css);
+@import url(inspector/networkPanel.css);
+@import url(inspector/panelEnablerView.css);
+@import url(inspector/profilesPanel.css);
+@import url(inspector/resourcesPanel.css);
+@import url(inspector/resourceView.css);
+@import url(inspector/revisionHistory.css);
+@import url(inspector/scriptsPanel.css);
+@import url(inspector/splitView.css);
+@import url(inspector/tabbedPane.css);
+@import url(inspector/textEditor.css);
+@import url(inspector/textPrompt.css);
+@import url(inspector/timelinePanel.css);
+
+
+
+.toolbar-label{
+	font-family:'YaHei Consolas Hybrid'
+}
+body.compact #toolbar{
+	cursor: default
+}
+.a0000{
+	position:absolute;
+	left:0;right:0;top:0;bottom:0;
+}
+.a_000{
+	position:absolute;
+	left:0;right:0;bottom:0;
+}
+
+.a00_0{
+	position:absolute;
+	left:0;right:0;top:0;
+}
+
+#editor_wrap pre{
+	position:absolute;
+	left:0;right:0;top:0;bottom:0;
+	margin:0;padding:0;
+	font-family:'YaHei Consolas Hybrid';	
+	font-size:12px;
+}
+#htmlSrc{
+	font-family:'YaHei Consolas Hybrid';
+	margin:0;padding:0;
+}
+
+.network-sidebar .network-category-images .icon {
+position: relative;
+background-image: url(Images/resourcePlainIcon.png);
+background-repeat: no-repeat;
+content: "";
+}
+.network-sidebar .image-network-icon-preview {
+position: absolute;
+margin: auto;
+top: 3px;
+bottom: 4px;
+left: 5px;
+right: 5px;
+max-width: 18px;
+max-height: 21px;
+min-width: 1px;
+min-height: 1px;
+}
+.network-log-grid.data-grid .network-loading {
+content: url(Images/spinnerInactive.gif);
+}
+
+.children.small .resource-sidebar-tree-item .icon {
+	content: url(Images/ext/white.png);
+}
+
+.children.small .resource-sidebar-tree-item .ext_php {
+	content: url(Images/ext/php.png);
+}
+.children.small .resource-sidebar-tree-item .ext_css {
+	content: url(Images/ext/css.png);
+}
+.children.small .resource-sidebar-tree-item .ext_js {
+	content: url(Images/ext/js.png);
+}
+
+#scripts-files{
+	max-width: 500px
+}
+select {
+	font-size: 12px;
+	line-height:12px;
+}
+.toolbar-item.database .toolbar-icon {
+	background-position-x: -193px;
+}

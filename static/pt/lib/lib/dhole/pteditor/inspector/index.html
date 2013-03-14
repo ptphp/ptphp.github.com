@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="dialog.css">
+    <link rel="stylesheet" type="text/css" href="inspector.css">
+    <link rel="stylesheet" type="text/css" href="inspectorCommon.css">
+    <link rel="stylesheet" type="text/css" href="inspectorSyntaxHighlight.css">
+    <link rel="stylesheet" type="text/css" href="popover.css">
+    <link rel="stylesheet" type="text/css" href="auditsPanel.css">
+	<link rel="stylesheet" type="text/css" href="breadcrumbList.css">
+	<link rel="stylesheet" type="text/css" href="canvasProfiler.css">
+	<link rel="stylesheet" type="text/css" href="cmdevtools.css">
+	<link rel="stylesheet" type="text/css" href="cssNamedFlows.css">
+	<link rel="stylesheet" type="text/css" href="dataGrid.css">
+	<link rel="stylesheet" type="text/css" href="elementsPanel.css">
+	<link rel="stylesheet" type="text/css" href="filteredItemSelectionDialog.css">
+	<link rel="stylesheet" type="text/css" href="heapProfiler.css">
+	<link rel="stylesheet" type="text/css" href="helpScreen.css">
+	<link rel="stylesheet" type="text/css" href="indexedDBViews.css">
+	<link rel="stylesheet" type="text/css" href="nativeMemoryProfiler.css">
+	<link rel="stylesheet" type="text/css" href="navigatorView.css">
+	<link rel="stylesheet" type="text/css" href="networkLogView.css">
+	<link rel="stylesheet" type="text/css" href="networkPanel.css">
+	<link rel="stylesheet" type="text/css" href="panelEnablerView.css">
+	<link rel="stylesheet" type="text/css" href="profilesPanel.css">
+	<link rel="stylesheet" type="text/css" href="resourcesPanel.css">
+	<link rel="stylesheet" type="text/css" href="resourceView.css">
+	<link rel="stylesheet" type="text/css" href="revisionHistory.css">
+	<link rel="stylesheet" type="text/css" href="scriptsPanel.css">
+	<link rel="stylesheet" type="text/css" href="splitView.css">
+	<link rel="stylesheet" type="text/css" href="tabbedPane.css">
+	<link rel="stylesheet" type="text/css" href="textEditor.css">
+	<link rel="stylesheet" type="text/css" href="textPrompt.css">
+	<link rel="stylesheet" type="text/css" href="timelinePanel.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    
+</head>
+<body class="undocked compact platform-windows platform-windows-vista port-unknown inactive" id="-webkit-web-inspector" youdao="bind">
+    <div id="toolbar">
+    	<!--
+	    <div class="toolbar-item close-left">
+	        <button id="close-button-left"></button>
+	    </div>-->
+	    <div id="toolbar-controls">
+	        <div class="toolbar-item">
+	            <button id="toolbar-dropdown-arrow" class="toolbar-label hidden">
+	                ?
+	            </button>
+	        </div><!--
+	        <div class="toolbar-item close-right">
+	            <button id="close-button-right">
+	            </button>
+	        </div>-->
+	    </div>
+	    <button class="toolbar-item toggled-on toggleable scripts">
+	        <div class="toolbar-icon">
+	        </div>
+	        <div class="toolbar-label">
+	            源码
+	        </div>
+	    </button>
+	    <!--
+	    <button class="toolbar-item  toggleable elements">
+	        <div class="toolbar-icon">
+	        </div>
+	        <div class="toolbar-label">
+	            元素
+	        </div>
+	    </button>
+	    <button class="toolbar-item toggleable network">
+	        <div class="toolbar-icon">
+	        </div>
+	        <div class="toolbar-label">
+	            网络
+	        </div>
+	    </button>
+	    <button class="toolbar-item toggleable resources">
+	        <div class="toolbar-icon">
+	        </div>
+	        <div class="toolbar-label">
+	            资源
+	        </div>
+	    </button>
+	    
+	    <button class="toolbar-item toggleable timeline">
+	        <div class="toolbar-icon">
+	        </div>
+	        <div class="toolbar-label">
+	            Timeline
+	        </div>
+	    </button>
+	    <button class="toolbar-item toggleable profiles">
+	        <div class="toolbar-icon">
+	        </div>
+	        <div class="toolbar-label">
+	            Profiles
+	        </div>
+	    </button>
+	    <button class="toolbar-item toggleable audits">
+	        <div class="toolbar-icon">
+	        </div>
+	        <div class="toolbar-label">
+	            Audits
+	        </div>
+	    </button>
+	    <button class="toolbar-item toggleable console">
+	        <div class="toolbar-icon">
+	        </div>
+	        <div class="toolbar-label">
+	            Console
+	        </div>
+	    </button>-->
+	</div>
+	<div id="main">
+	    <div id="floating-status-bar-container" class="status-bar">
+	        <div id="floating-status-bar-resizer">
+	        </div>
+	    </div>
+	    <div id="main-panels" spellcheck="false" class="visible">
+	        <div class="inspector-footer status-bar hidden">
+	        </div>
+	        <div class="fill">
+	        	<!-- fill start-->	        	
+	        	<div class="panel resources visible">
+				    <div class="split-view visible">
+				        <div class="split-view-contents split-view-sidebar-left sidebar outline-disclosure filter-all children small"
+				        style="left: 0px; width: 200px;">
+				        	<div id="name" style="width:100%">
+							  <input type="text" value="D:\Dhole\PtProject\Core" style="width:120px" id="input_dir" /><button id="btn_dir">提交</button>
+							</div>
+				        	
+				            <ol class="" tabindex="0">
+				                <li id="srcTree" onclick="$(this).toggleFolder()" title="D:\Dhole\PtProject\Core" class="parent frame-storage-tree-item expanded">
+				                    <div class="selection"></div>
+				                    <img class="icon">
+				                    <div class="base-storage-tree-element-title">
+				                        Src
+				                    </div>
+				                </li>
+				                <!--
+				                <li title="" class="parent database-storage-tree-item">
+				                    <div class="selection">
+				                    </div>
+				                    <img class="icon">
+				                    <div class="base-storage-tree-element-title">
+				                        Web SQL
+				                    </div>
+				                </li>
+				                <li title="" class="parent indexed-db-storage-tree-item">
+				                    <div class="selection">
+				                    </div>
+				                    <img class="icon">
+				                    <div class="base-storage-tree-element-title">
+				                        IndexedDB
+				                    </div>
+				                </li>
+				                <li title="" class="parent domstorage-storage-tree-item local-storage">
+				                    <div class="selection">
+				                    </div>
+				                    <img class="icon">
+				                    <div class="base-storage-tree-element-title">
+				                        Local Storage
+				                    </div>
+				                </li>
+				                <li title="" class="parent domstorage-storage-tree-item session-storage">
+				                    <div class="selection">
+				                    </div>
+				                    <img class="icon">
+				                    <div class="base-storage-tree-element-title">
+				                        Session Storage
+				                    </div>
+				                </li>
+				                <li title="" class="parent cookie-storage-tree-item">
+				                    <div class="selection">
+				                    </div>
+				                    <img class="icon">
+				                    <div class="base-storage-tree-element-title">
+				                        Cookies
+				                    </div>
+				                </li>
+				                <li title="" class="parent application-cache-storage-tree-item">
+				                    <div class="selection">
+				                    </div>
+				                    <img class="icon">
+				                    <div class="base-storage-tree-element-title">
+				                        Application Cache
+				                    </div>
+				                </li>-->
+				            </ol>
+				        </div>
+				        <div class="split-view-contents diff-container" style="right: 0px; left: 200px;">
+				        	<div class="status-bar a00_0" id="scripts-status-bar" style="left:1px;height:24px">
+			        			<select  id="scripts-files" class="status-bar-item"></select>
+			        			<button id="close-button-right" onclick="$(this).closeEditor()" style="position:absolute;right:10px">
+	            				</button>
+			        		</div>
+			        		
+				        	<div id="editor_wrap" class="a_000" style="top:25px">
+				        		
+				        	</div>
+				        </div>
+				        <div class="split-view-resizer" style="left: 197px;">
+				        </div>
+				    </div>
+				</div>
+	        	
+	        	<!--fill end-->
+	        </div>
+	    </div>
+	</div>
+	<div id="drawer">
+	    <div id="drawer-contents" class="drawer-contents">
+	    </div>
+	</div>
+	<div id="main-status-bar" class="status-bar">
+	    <button class="dock-status-bar-item status-bar-item toggled-bottom" title="Dock to main window.">
+	        <div class="glyph">
+	        </div>
+	        <div class="glyph shadow">
+	        </div>
+	    </button>
+	    <button class="console-status-bar-item status-bar-item" title="Show console.">
+	        <div class="glyph">
+	        </div>
+	        <div class="glyph shadow">
+	        </div>
+	    </button>
+	    <button class="node-search-status-bar-item status-bar-item" title="Select an element in the page to inspect it.">
+	        <div class="glyph">
+	        </div>
+	        <div class="glyph shadow">
+	        </div>
+	    </button>
+	    <div id="bottom-status-bar-container">
+	        <div id="panel-status-bar">
+	        </div>
+	    </div>
+	    <div id="error-warning-count" class="hidden">
+	    </div>
+	    <button class="settings-status-bar-item status-bar-item" title="Settings">
+	        <div class="glyph">
+	        </div>
+	        <div class="glyph shadow">
+	        </div>
+	    </button>
+	</div>
+	
+	<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery-ui.custom.js" type="text/javascript" charset="utf-8"></script>
+	<script src="ace/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script src="format/htmlformat.js" type="text/javascript" charset="utf-8"></script>
+	<script src="format/jsformat.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/md5.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/common.js" type="text/javascript" charset="utf-8"></script>
+	
+</body>
+</html>

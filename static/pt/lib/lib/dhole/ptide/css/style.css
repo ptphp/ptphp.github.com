@@ -1,0 +1,92 @@
+
+
+.splite_bar{
+    width:2px;
+    top:0;
+    bottom:0;
+    position: absolute;
+    background-color: rgb(56, 56, 41);
+    cursor: e-resize;
+}
+.splite_debug{
+    cursor: s-resize;
+    left:0;
+    position: absolute;
+    right:0;
+    height:2px;
+    background-color: #CC3300;
+}
+.splite_bar:hover,.splite_debug:hover{
+    background-color: #004444;
+}
+
+.sidebar_top{
+    position:absolute;
+    top:0;
+    left:0;right:0;
+    height:25px;
+}
+
+
+.sidebar_wrap{
+    position:absolute;
+    top:25px;
+    left:0;right:0;bottom:0;
+}
+
+.fileTree{
+    overflow: auto;
+    position:absolute;
+    top:0;
+    left:0;right:0;bottom:0;
+}
+
+
+
+.fileTree ul{
+    display:none;
+}
+.fileTree ul span{
+    cursor:pointer;  
+    display:inline-block;
+    height:18px;
+    line-height:18px;
+    background-position: 3px 1px;
+    background-repeat: no-repeat;
+    padding-left:24px;
+}
+.fileTree .ext_white_text{
+    background-image: url(../images/ext/page_white_text.png);  
+}
+.fileTree .ext_folder{
+    background-image: url(../images/ext/folder.png);  
+}
+.fileTree .ext_php{
+    background-image: url(../images/ext/php.png);  
+}
+.fileTree .ext_css{
+    background-image: url(../images/ext/css.png);  
+}
+.fileTree .ext_js{
+    background-image: url(../images/ext/js.png);  
+}
+.fileTree .ext_img{
+    background-image: url(../images/ext/img.png);  
+}
+
+.fileTree .liOpen{
+    background-image: url(../images/tree_close_arrow_small.png);
+    background-repeat: no-repeat;    
+    padding-left:6px;
+    background-position: 0 0;    
+}
+.fileTree .liClose{
+    background-image: url(../images/tree_open_arrow_small.png);
+    background-repeat: no-repeat;    
+    background-position: 0 0;   
+    padding-left:6px
+}
+.fileTree .liFile{
+    padding-left:16px
+}
+

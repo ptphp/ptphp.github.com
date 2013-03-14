@@ -1,0 +1,124 @@
+/* Resizable
+----------------------------------*/
+.ui-resizable { position: absolute;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0px; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0px; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0px; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0px; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+
+
+
+.node_tmp{
+	background-color: #D4D4EC;
+	border: 2px solid #E1E1E8;
+	-webkit-border-radius: 4px;
+	cursor: move;
+	padding: 6px;
+	min-width: 60px;
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	position:absolute;
+}
+
+.node {
+	padding: 6px;
+	background-color: #F9FAEA;
+	border: 2px solid #E1E1E8;
+	-webkit-border-radius: 4px;
+	position:absolute;
+	cursor:pointer;
+	overflow: hidden;
+	font-size:14px;
+	text-align: center;
+	min-width: 60px;
+	z-index: 20000;
+}
+
+.connector {
+	height:50%;
+	width:50%;
+	z-index: 10000;
+	border-width: 0px;	
+	border-color:rgba(226, 210, 94, 0.84);
+	border-style: solid;
+	margin:1px;
+	padding:0;
+	position:absolute;
+	z-index: 10000;
+}
+
+.connector label {
+	font-size:14px;
+}
+
+.conn_wapper1{
+	background-color: #5BB75B;
+}
+.conn_wapper:after{
+	clear: both
+}
+.right-key #rk_node_select,.right-key #rk_node_name{
+	line-height: 20px;
+	height: :20px;
+	margin: 0;	
+	padding:0
+}
+.right-key{
+	padding-left:10px;
+	padding-right:10px;
+}
+.dropdown-menu li{
+	padding:0;
+	margin:0
+}
+.node_name {
+	height:20px;
+	font-weight: 700;
+}
+.node_name input{
+	min-width: 100px;	
+	background-color: '#ccc';
+}
+.node .node_border_bottom{
+	position: relative;
+	padding-bottom:5px;
+	border-bottom: 1px solid #ccc;
+}
+.tableFieldItem{
+	line-height:20px;
+	height:20px;
+	margin-bottom:4px;
+	position: relative;
+}
+.tableFieldItem input{padding:0 6px;width:80%;background-color:transparent;margin:0;text-align:left}
+
+#add_icon{
+	position: absolute;
+	top:2px;
+	right:0px;
+	background-image:url(../../../img/icon/icons/add.png);
+	width:16px;
+	height:16px
+}
+
+#field_remove_icon{
+	position: absolute;
+	top:3px;
+	right:0px;
+	background-image:url(../../../img/icon/icons/cross.png);
+	width:16px;
+	height:16px;
+}
+#flow_panel{
+	
+}
+
+
+
