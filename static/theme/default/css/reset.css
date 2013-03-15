@@ -103,8 +103,15 @@ sub {
 fieldset,img {
     border: 0;
 }
-ul,ol {
+
+ul,ol{
     list-style: none;
+    margin:0;
+    padding:0;
+}
+li ul,li ol{
+    padding:0;
+    margin:0;
 }
 mark {
     background: #ff0;

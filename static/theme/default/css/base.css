@@ -1,0 +1,333 @@
+@charset "utf-8";
+*html{ background-image:url(about:blank); background-attachment:fixed; /* 解决固定层在IE6下闪的问题 */}
+
+body{font-size:12px;}
+h1, h2, h3, h4, h5 {margin:0;}
+
+
+ul.pull_left li{
+    float: left;
+}
+
+.show {display:block !important;}
+.inline {display:inline !important;}
+
+.align_right    { text-align:right;	  }
+.align_left     { text-align:left;	  }
+.align_center   { text-align:center;  }
+.align_justify  { text-align:justify; }
+
+.mainbg{
+    background-repeat: no-repeat;
+    background-image: url(../images/sprite_main.png);
+}
+
+.iconsbg{
+    background-repeat: no-repeat;
+    background-image: url(../images/sprite_icons.png);
+}
+
+/* Font
+********/
+
+.yahei{font-family: "Microsoft YaHei","微软雅黑","黑体",SimSun,sans-serif;}
+.song{font-family: "宋体",SimSun,sans-serif}
+.arial {
+    font-family:Arial,Helvetica,sans-serif
+}
+.tahoma {
+    font-family:Tahoma,Geneva,sans-serif
+}
+
+.money {
+    font-family:Helvetica,Arial,'LiHei Pro Medium','Microsoft YaHei',SimSun,sans-serif
+}
+.f12{
+    font-size: 12px;
+}
+.f14{
+    font-size: 14px;
+}
+
+.height24{
+    line-height: 24px;
+    height: 24px;
+}
+.height27{
+    line-height: 27px;
+    height: 27px;
+}
+
+.absolute{
+    position: absolute;
+}
+.relative{
+    position:relative;
+}
+
+
+.a0000{
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+.a000_{
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+}
+.a00_0{
+    position: absolute;
+    top:0px;
+    right:0px;
+    left:0px;
+}
+
+.a0_00{
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+}
+.a_000{
+    position: absolute;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+
+.a0_0_{
+    position: absolute;
+    top:0px;
+    bottom:0px;
+}
+.a_0_0{
+    position: absolute;
+    right:0px;
+    left:0px;
+}
+
+/* 固定不动 */
+.fixed{
+    position:fixed; clip:rect(0 100% 100% 0); _position:absolute;
+
+    /* 底部 */
+    bottom:0px; left:0px; _top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);
+    /*_left:expression(document.documentElement.scrollLeft + document.documentElement.clientWidth - offsetWidth);*/
+
+    /* 左侧 */
+    /*left:0px;*/
+    /*_top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);*/
+    /*_left:expression(document.documentElement.scrollLeft + document.documentElement.clientWidth - offsetWidth);*/
+}
+
+/* png透明 */
+.pngfix{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='images/x.png');}
+
+/* 渐变 */
+.gradient{filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#dedede);
+    background: -moz-linear-gradient(top, #ffffff, #dedede);}
+
+/* 解决ie下连接加粗的鼠标样式问题*/
+a strong{ cursor:pointer;}
+.left{
+    float: left;
+}
+
+.border1px{
+    border: #E3E3E3 1px solid;
+}
+.border2px{
+    border: #E3E3E3 2px solid;
+}
+
+.radius3px{
+    border-radius: 3px;
+}
+.radius5px{
+    border-radius: 5px;
+}
+.radius10px{
+    border-radius: 10px;
+}
+
+.center{ margin:0 auto; text-align:center;}
+
+.right{
+    float: right;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.hack10 {
+    height:10px;
+    clear:both;
+    overflow:hidden
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid white;
+    border-top: 1px solid rgb(196, 212, 221);
+    margin: 15px auto;
+}
+
+.org{
+    color: #F60
+}
+.red{
+    color: red
+}
+.green{
+    color: green
+}
+.c333{
+    color: #333
+}
+.c999{
+    color: #333
+}
+.c666{
+    color: #666
+}
+.c000{
+    color: #000
+}
+.pad6 {padding:6px;overflow:hidden}
+
+.pad10 {
+    padding:10px;
+    overflow:hidden
+}
+.pad0_10 {
+    padding:0 10px;
+    overflow:hidden
+}
+.pad0_6 {
+    padding:0 6px;
+    overflow:hidden
+}
+.pad10_0 {
+    padding:10px 0;
+    overflow:hidden
+}
+.pad6_0 {
+    padding:6px 0;
+    overflow:hidden
+}
+
+.mar6 {
+    margin:6px;
+    overflow:hidden
+}
+.mar10 {
+    margin:10px;
+    overflow:hidden
+}
+.mar10_0 {
+    margin:10px 0;
+    overflow:hidden
+}
+.mar6_0 {
+    margin:6px 0;
+    overflow:hidden
+}
+.mar0_10 {
+    margin:0 10px;
+    overflow:hidden
+}
+.mar0_6 {
+    margin:0 6px;
+    overflow:hidden
+}
+
+
+.pointer{cursor: pointer;}
+.move{cursor: move;}
+
+/* block
+****************************/
+
+.block span.block-hd,.block span.block-ft,.block span.block-hd span,.block span.block-ft span,.dotted li,s.new,s.hot {
+    background: transparent url(../images/common.png) no-repeat scroll 21px 157px;
+}
+.block .block-bd {
+    border: 1px solid #C4D4DD;
+    background-color: #F9F9F9;
+    padding: 15px;
+}
+
+.block span.block-hd,.block span.block-ft {
+    display: block;
+    position: relative;
+    height: 3px;
+    _overflow: hidden;
+}
+
+.block span.block-hd span,.block span.block-ft span {
+    float: right;
+    width: 3px;
+    height: 3px;
+}
+
+.block span.block-hd {
+    margin-bottom: -3px;
+    background-position: -2px -2px;
+    overflow: hidden;
+}
+
+.block span.block-ft {
+    margin-top: -3px;
+    background-position: -2px 0;
+    overflow: hidden;
+}
+
+.block span.block-hd span {
+    background-position: 0 -2px;
+}
+
+.block span.block-ft span {
+    background-position: 0 0;
+}
+
+.block .block-title {
+    position: relative;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #fff;
+    line-height: 15px;
+    _zoom: 1;
+}
+
+.block h2 {
+    font-size: 14px;
+    border-bottom: 1px solid #C4D4DD;
+    height: 19px;
+}
+
+.block h2 strong {
+    border-bottom: 2px solid #69CBF1;
+    line-height: 18px;
+    height: 18px;
+    position: absolute;
+}
+
+.block .more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+}

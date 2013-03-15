@@ -98,14 +98,6 @@ a.black {
 /* nav-bar
 ***************************************/
 
-#nav-bar li.lab s,.block span.block-hd,.block span.block-ft,.block span.block-hd span,.block span.block-ft span,.dotted li,s.new,s.hot {
-    background: transparent url(../images/common.png) no-repeat scroll 21px 157px;
-}
-
-.nice-title,.nice-title em {
-    background: transparent url(../images/nice-title.png) no-repeat scroll 300px 22px;
-}
-
 #nav-bar,#nav-bar ul,#nav-bar li.selected,#nav-bar li.selected span {
     background: transparent url(../images/nav-bar.png) no-repeat scroll 912px 152px;
     _background-image: url(../images/nav-bar.gif);
