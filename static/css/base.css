@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* Font
+********/
+.f12{
+    font-size: 12px;
+}
+.f14{
+    font-size: 14px;
+}
+
+
+.absolute{
+    position: absolute;
+}
+.relative{
+    position:relative;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.hack10 {
+    height:10px;
+    clear:both;
+    overflow:hidden
+}
+
+
+
+.dotted li {
+    line-height: 24px;
+    margin-left: 6px;
+    padding-left: 9px;
+    background-position: -18px -48px;
+    vertical-align: middle;
+}
+
+.dotted.black li {
+    background-position: -18px -65px;
+}
+
+.dotted li.red {
+    background-position: -18px -82px;
+}
+
+.dotted li.red,.dotted li.red a {
+    color: #d40000;
+}
+
+.dotted li.red a:hover {
+    color: #dd5400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.block .block-bd {
+    border: 1px solid #C4D4DD;
+    background-color: #F9F9F9;
+    padding: 15px;
+}
+
+.block span.block-hd,.block span.block-ft {
+    display: block;
+    position: relative;
+    height: 3px;
+    _overflow: hidden;
+}
+
+.block span.block-hd span,.block span.block-ft span {
+    float: right;
+    width: 3px;
+    height: 3px;
+}
+
+.block span.block-hd {
+    margin-bottom: -3px;
+    background-position: -2px -2px;
+    overflow: hidden;
+}
+
+.block span.block-ft {
+    margin-top: -3px;
+    background-position: -2px 0;
+    overflow: hidden;
+}
+
+.block span.block-hd span {
+    background-position: 0 -2px;
+}
+
+.block span.block-ft span {
+    background-position: 0 0;
+}
+
+.block .block-title {
+    position: relative;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #fff;
+    line-height: 15px;
+    _zoom: 1;
+}
+
+.block h2 {
+    font-size: 14px;
+    border-bottom: 1px solid #C4D4DD;
+    height: 19px;
+}
+
+.block h2 strong {
+    border-bottom: 2px solid #69CBF1;
+    line-height: 18px;
+    height: 18px;
+    position: absolute;
+}
+
+.block .more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+}
+
+
+hr {
+    border: 0;
+    border-bottom: 1px solid white;
+    border-top: 1px solid rgb(196, 212, 221);
+    margin: 15px auto;
+}
