@@ -117,3 +117,7 @@ mark {
     background: #ff0;
 }
 
+p {
+    margin: 0 0 10px;
+    line-height: 20px;
+}

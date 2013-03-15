@@ -5,10 +5,87 @@ body{font-size:12px;}
 h1, h2, h3, h4, h5 {margin:0;}
 
 
-ul.pull_left li{
+ul.inline  li, ol.inline  li{
     float: left;
 }
 
+
+
+.width_1    {  width:40px;  }
+.width_2    {  width:100px; }
+.width_3    {  width:160px; }
+.width_4    {  width:220px; }
+.width_5    {  width:280px; }
+.width_6    {  width:340px; }
+.width_7    {  width:400px; }
+.width_8    {  width:460px; }
+.width_9    {  width:520px; }
+.width_10   {  width:580px; }
+.width_11   {  width:640px; }
+.width_12   {  width:700px; }
+.width_13   {  width:760px; }
+.width_14   {  width:820px; }
+.width_15   {  width:880px; }
+.width_16   {  width:940px; }
+
+
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrap .wrap {
+    margin: 0 -10px;
+    width: auto;
+    display: inline-block;
+}
+
+.region {
+    margin-left:10px; margin-right:10px;
+    display: inline;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+
+.offset12 {
+margin-left: 1230px;
+}
+.offset11 {
+margin-left: 1130px;
+}
+.offset10 {
+margin-left: 1030px;
+}
+.offset9 {
+margin-left: 930px;
+}
+.offset8 {
+margin-left: 830px;
+}
+.offset7 {
+margin-left: 730px;
+}
+.offset6 {
+margin-left: 630px;
+}
+.offset5 {
+margin-left: 530px;
+}
+.offset4 {
+margin-left: 430px;
+}
+.offset3 {
+margin-left: 330px;
+}
+.offset2 {
+margin-left: 230px;
+}
+.offset1 {
+margin-left: 130px;
+}
 .show {display:block !important;}
 .inline {display:inline !important;}
 
@@ -229,6 +306,9 @@ hr {
     padding:6px 0;
     overflow:hidden
 }
+.pad0{
+    padding:0;
+}
 
 .mar6 {
     margin:6px;
@@ -254,7 +334,9 @@ hr {
     margin:0 6px;
     overflow:hidden
 }
-
+.mar0{
+    margin: 0;
+}
 
 .pointer{cursor: pointer;}
 .move{cursor: move;}
@@ -267,8 +349,15 @@ hr {
 }
 .block .block-bd {
     border: 1px solid #C4D4DD;
-    background-color: #F9F9F9;
     padding: 15px;
+    *zoom: 1;
+}
+
+.block .block-bd:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 .block span.block-hd,.block span.block-ft {
