@@ -98,7 +98,9 @@ a.black {
     height: 70px;
     overflow: hidden;
 }
-
+#breadcrumb{	
+	padding-left:10px;
+}
 /* nav-bar
 ***************************************/
 

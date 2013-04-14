@@ -401,13 +401,13 @@ hr {
     _zoom: 1;
 }
 
-.block h2 {
+.block .block-title h2 {
     font-size: 14px;
     border-bottom: 1px solid #C4D4DD;
     height: 19px;
 }
 
-.block h2 strong {
+.block .block-title h2 strong {
     border-bottom: 2px solid #69CBF1;
     line-height: 18px;
     height: 18px;
@@ -419,4 +419,69 @@ hr {
     right: 0;
     top: 0;
     font-size: 12px;
+}
+
+.preview pre::-webkit-scrollbar-track-piece {
+    background: #141414;
+}
+.preview pre::-webkit-scrollbar-thumb {
+    background: #141414;
+}
+.preview pre::-webkit-scrollbar-thumb:hover {
+    background: #6f6f6f;
+    border:0;
+}
+.ace_editor.dark {
+    background: #141414;
+}
+.preview_pane {
+    overflow: auto;
+}
+.preview {
+    padding: 0 20px;
+}
+
+.preview h1, .preview h2, .preview h3, .preview h4, .preview h5, .preview h6 {
+    font-weight: bold;
+    margin: 0.75em 0;
+}
+.preview h1 {
+    font-size: 2em;
+}
+.preview h2 {
+    font-size: 1.8em;
+}
+.preview h3 {
+    font-size: 1.6em;
+}
+.preview h4 {
+    font-size: 1.4em;
+}
+.preview h5 {
+    font-size: 1.2em;
+}
+.preview h6 {
+    font-size: 1.0em;
+}
+.preview blockquote {
+    padding-left: 20px;
+    border-left: 5px #7d7d7d solid;
+}
+.preview ul, .preview ol {
+    margin-left: 20px;
+}
+.preview pre {
+    margin: 10px;
+    background-color: #141414;
+    padding: 10px;
+    color: #f2f2f2;
+    overflow: auto;
+}
+
+.preview code {
+    font-size: 14px;
+    font-family: 'monospace','Monaco';
+}
+.preview p {
+    margin: 1em 0;
 }
